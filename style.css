@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family:poppins;
+}
+
+body {
+    background: linear-gradient(#e66465, #9198e5);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.parent-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+margin-bottom:100px;
+padding-top: 35px;
+}
+.vertical-section-holder {
+    height: 100%;
+    justify-content: center;
+}
+
+
+.login-signup-holder {
+    width: 450px;
+    padding: 10 0 0;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.forms {
+    background-color:#ffffff;
+    max-width: 500px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+	border-radius:25px;
+}
+
+.forms .heading-text {
+    padding: 10px;
+    color: midnightblue;
+}
+
+.forms input {
+    font-family: "Roboto", sans-serif;
+    outline: 1px;
+    background: white;
+    width: 100%;
+    border: 0;
+    margin: 15px 0 0 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+	border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
+ }
+.forms input:hover{
+	opacity:0.8;
+}
+.forms input:focus {
+    outline: none;
+      border: 1px solid red;
+}
+
+.forms button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    margin: 25px 0 0 0;
+    background: #453FCF;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+	border-radius:10px;
+	
+}
+
+.forms button :hover{
+	opacity:0.5;
+}
+/*
+.button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: #453FCF;
+  width: 89%;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+*/
+.forms .message {
+    margin: 15px 0 0;
+    color: black;
+    font-size: 16px;
+}
+
+.forms .message a {
+    color: #453FCF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.forms button:hover, .forms button:active {
+    background: #7F39FF;
+}
+
+.button:hover, .button:active {
+    background: #7F39FF;
+}
+
+.forms .login-form {
+    display: none;
+}
+
+.errors {
+    color: darkblue;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 14px;
+    font-style: oblique;
+    text-align: left;
+}
+
+.indicator {
+    border-radius: 6px;
+    padding: 4px;
+    background-color: #453FCF;
+    height: 10px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.indicator span {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+.indicator span:nth-child(2) {
+    margin: 0 3px;
+}
+
+.indicator span.active:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.weak:before {
+    background-color: #ff4757;
+}
+
+.indicator span.medium:before {
+    background-color: orange;
+}
+
+.indicator span.strong:before {
+    background-color: #23ad5c;
+}
+
+.strength {
+    border-radius: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #453FCF;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+}
+
+.strength.weak {
+    color: #ff4757;
+}
+
+.strength.medium {
+    color: orange;
+}
+
+.strength.strong {
+    color: #23ad5c;
+}
+.footer {
+    font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
